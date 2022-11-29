@@ -1,0 +1,15 @@
+How computers are work ?
+the every computer has 3 important components
+
+1. Random Access Memory (RAM)
+2. Computer Proccessor
+3. Storage
+
+When we start our computer CPU has power from Block Power and start load data
+from storage to RAM.
+
+Who RAM is work ?
+RAM work as like Storage but have id for data
+Our CPU has cash, his need for quick search data be id in RAM
+
+How work storage data in RAM

@@ -1,0 +1,54 @@
+Big O Cheat Sheet
+----------------------------------------------------------------
+Useless link:
+http://bigocheatsheet.com
+----------------------------------------------------------------
+-Big O-
+O(1)         => Constant            =>  no loops
+O(log n)     => Logarithmic         => usually searching algorithms have log(n) if they are sorted (Binary Search)
+O(n)         => Linear              => for loops while loops
+O(n*log(n))  => Log Linitear        => Sorting operations usually
+O(n^2)       => Quadratic           => every element in a collection needs to be compared to every other element
+O(2^N)       => Exponential         => recursive algorithms that solve a problem of size N
+O(n!)        => Factorial           => you are adding a loop for every element
+
+**Iterating though half a collection is still O(n)
+**Two separate collections: O(a + b)
+
+-What can cause time in a function?-
+Operations            (+, -, *, /)
+Comparisons           (<, >, ==)
+Looping               (for, while)
+Outside Function call (function())
+
+-Rule Book-
+Rule 1: Always worst case
+Rule 2: Remove Constants
+Rule 3: Different inputs should have different variables. O(a + b). A and B arrays nested would be O(a * b)
+        * for steps in order
+        * for nested steps
+Rule 4: Drop Non-dominant terms
+
+-My notes-
+Rule 1: Worst case => use break it makes algoritm easier
+
+Rule 2: Remove constant => from formula because it is not matter
+Example: O(1 + 1 + (n + 7)) = it is still O(n)
+
+Rule 3: Diferent terms for input => make different notation for different notation
+Example from 62 line: different params and different notes O(a + b)
+
+Rule 4: Drop Non Dominants => O(n + n^2) we must drop n
+and finish result will be O(n^2) we keep Dominants.
+Another example: O(x^2 + 3x + 100 + x/2) we worry about the most important
+dominant term because x in square is the most important, how we now that x^2
+is more important? because in the big O we more worry about scaling
+----------------------------------------------------------------
+
+-What causes of Space complexity?-
+Variables
+Data Structure
+Function Call
+Allocations
+
+----------------------------------------------------------------
